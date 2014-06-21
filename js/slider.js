@@ -97,9 +97,12 @@ $("#next").click(function() {
 
 $(".slider-button").hover(
 	function() {
-		if(!$(this).is(':animated'))
+		if(!$(this).is(':animated')) {
 			$(this).animate({ bottom: 35 })
+			$(this).css("cursor", "pointer");
+		}
 	},
 	function() {
 		$(this).animate({ bottom: 40 })
+		$(this).css("cursor", "pointer");
 });
