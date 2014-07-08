@@ -77,7 +77,7 @@ function showSlide(id) {
 
 	else if (id < 1) {
 		id = count;
-	}
+	
 
 	$("#slider-images img").fadeOut();
 	$("#slide-" + id).fadeIn();
