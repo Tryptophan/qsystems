@@ -18,8 +18,8 @@ function startSlider() {
 			sliderIndex = 1;
 		}
 
-		$("#slider-images img").fadeOut();
-		$("#slide-" + sliderNext).fadeIn();
+		$("#slider-images img").fadeOut(600);
+		$("#slide-" + sliderNext).delay(600).fadeIn(600);
 
 		sliderIndex = sliderNext;
 		sliderNext = sliderNext + 1;
@@ -79,8 +79,8 @@ function showSlide(id) {
 		id = count;
 	}
 
-	$("#slider-images img").fadeOut();
-	$("#slide-" + id).fadeIn();
+	$("#slider-images img").fadeOut(600);
+	$("#slide-" + id).delay(600).fadeIn(600);
 
 	sliderIndex = id;
 	sliderNext = id + 1;
