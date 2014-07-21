@@ -105,6 +105,10 @@ p {
 	border: solid 1px #666;
 }
 
+.container span {
+	background-color: yellow;
+}
+
 #slider {
 	height: 500px;
 	width: 100%;
