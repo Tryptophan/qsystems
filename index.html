@@ -28,11 +28,11 @@
 				<a href="index.html"><h1>ystems</h1></a>
 			</div>
 
-			<div id="tabs">
+			<div class="tab-container">
 				<div class="tab"><a href="news.html"><p>News</p></a></div>
 				<div class="tab"><a href="about.html"><p>About</p></a></div>
 				<div class="tab"><a href="our-passion.html"><p>Our Passion</p></a></div>
-				<div class="tab"><a href="leasing.html"><p>Franchising</p></a></div>
+				<div class="tab"><a href="franchising.html"><p>Franchising</p></a></div>
 				<div class="tab"><a href="leasing.html"><p>Leasing</p></a></div>
 				<div class="tab"><a href="contact.html"><p>Contact</p></a></div>
 			</div>
@@ -41,18 +41,21 @@
 			<div class="search-button"><img src="img/search.png" /></div>
 		</div>
 
-		<div id="slider">
-			<img id="previous" src="img/previous.png" alt="" />
-			<img id="next" src="img/next.png" alt="" />
+		<div class="slider">
 
-			<div id="slider-images">
+			<img id="previous" src="img/previous.png" alt="" />
+			<img id="next"src="img/next.png" alt="" />
+
+			<div class="slides">
 				<div class="slider-button">
 					<p>Caption that says things and such, pretty cool</p>
 				</div>
-				<img id="slide-1" src="img/slide-1.jpg" alt="" />
-				<img id="slide-2" src="img/slide-2.jpg" alt="" />
-				<img id="slide-3" src="img/slide-3.jpg" alt="" />
-				<img id="slide-4" src="img/slide-4.jpg" alt="" />
+				<ul class="bxslider">
+					<li><img src="img/slide-1.jpg" /></li>
+					<li><img src="img/slide-2.jpg" /></li>
+					<li><img src="img/slide-3.jpg" /></li>
+					<li><img src="img/slide-4.jpg" /></li>
+				</ul>
 			</div>
 		</div>
 
@@ -60,17 +63,17 @@
 			<div class="tri-container">
 				<div class="third-container">
 						<img src="img/cadet-training.png" alt="" />
-						<div class="button"><p>Cadet Training</p></div>
+						<a href="#"><div class="button"><p>Cadet Training</p></div></a>
 				</div>
 
 				<div class="third-container">
 				<img src="img/simulation.png" alt="" />
-					<div class="button"><p>Simulation</p></div>
+					<a href="#"><div class="button"><p>Simulation</p></div></a>
 				</div>
 
 				<div class="third-container">
 					<img src="img/crew-training.png" alt="" />
-					<div class="button"><p>Crew Training</p></div>
+					<a href="#"><div class="button"><p>Crew Training</p></div></a>
 				</div>
 			</div>
 
@@ -127,7 +130,8 @@
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript"src="js/slider.min.js"></script>
-		<script type="text/javascript"src="js/search.min.js"></script>
+		<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="js/slider.min.js"></script>
+		<script type="text/javascript" src="js/search.min.js"></script>
 	</body>
 </html>
