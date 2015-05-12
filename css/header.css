@@ -1,0 +1,88 @@
+.header {
+	height: 220px;
+	padding: 20px 80px 0px 80px;
+	z-index: 999;
+}
+
+#logo-container h1{
+	display: inline-block;
+	color: #000;
+	position: absolute;
+	top: 20px;
+}
+
+#logo {
+	width: 90px;
+	height: 100px;
+	margin-bottom: 20px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.tab-container {
+	margin: 10px 0px 10px 0px;
+}
+
+.tab {
+	padding: 5px;
+	border: 2px solid #FFF;
+	border-radius: 5px;
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.tab p {
+	font-size: 30px;
+	color: #000;
+}
+
+.tab a {
+	text-decoration: none;
+}
+
+.tab:hover {
+	cursor: pointer;
+	background-color: #7BC342;
+}
+
+.tab:hover p {
+	color: #FFF;
+}
+
+#tab-clicked {
+	background-color: #7BC342;
+}
+
+#tab-clicked p {
+	color: #FFF;
+}
+
+.search {
+	position: absolute;
+	right: 78px;
+	top: 22px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 18px;
+	padding-left: 5px;
+	background-color: #FFF;
+	border: solid 1px #BBB;
+}
+
+.search:focus {
+	border: solid 1px #666;
+	z-index: 2;
+}
+
+.search-button {
+	position: absolute;
+	right: 34px;
+	top: 22px;
+	padding-left: 6px;
+	width: 31px;
+	height: 26.4px;
+	border: solid 1px #BBB;
+}
+
+.search-button:hover {
+	border: solid 1px #666;
+}

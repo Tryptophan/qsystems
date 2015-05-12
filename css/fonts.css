@@ -1,0 +1,9 @@
+@font-face {
+	font-family: BebasNeue;
+	src: url("../fonts/BebasNeue_Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: BebasNeue_Thin;
+	src: url("../fonts/BebasNeue_Thin.otf") format("opentype");
+}

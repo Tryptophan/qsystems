@@ -1,0 +1,15 @@
+@import url("reset.css");
+@import url("main.css");
+
+@import url("fonts.css");
+
+/* INDEX COMPONENT STYLES */
+@import url("header.css");
+@import url("footer.css");
+@import url("slider.css");
+
+/* PAGE STYLES */
+@import url("news.css");
+@import url("about.css");
+
+@import url("contact.css");

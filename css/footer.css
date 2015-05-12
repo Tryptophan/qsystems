@@ -1,0 +1,42 @@
+.footer {
+	width: 100%;
+	height: 200px;
+	background-color: #6EA6C0;
+	padding-top: 40px;
+}
+
+#center-footer {
+	width: 938px;
+	margin: auto;
+}
+
+#left-footer {
+	float: left;
+}
+
+#right-footer {
+	float: right;
+}
+
+.footer-links {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#left-footer :last-child{
+	margin-right: 0px;
+}
+
+#right-footer :last-child{
+	margin-right: 0px;
+}
+
+.footer-link {
+	text-decoration: none;
+}
+
+.footer-link p{
+	color: #282828;
+	font-size: 20px;
+	margin-bottom: 5px;
+}

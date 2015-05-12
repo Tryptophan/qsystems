@@ -1,0 +1,54 @@
+.slider {
+	height: 500px;
+	width: 100%;
+}
+
+.slides {
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+
+.bxslider {
+	z-index: -1;
+}
+
+.slider-button {
+	background-color: #6EA6C0;
+	position: absolute;
+	left: 80px;
+	bottom: 40px;
+	border-radius: 5px;
+	padding: 20px;
+	border-bottom: 5px solid #336183;
+	z-index: 999;
+}
+
+.slider-button:hover {
+	cursor: pointer;
+}
+
+#previous {
+	float: left;
+	position: absolute;
+	top: 450px;
+	left: 80px;
+	z-index: 999;
+}
+
+#previous:hover {
+	cursor: pointer;
+}
+
+#next {
+	float: right;
+	position: absolute;
+	top: 450px;
+	right: 80px;
+	z-index: 999;
+}
+
+#next:hover {
+	cursor: pointer;
+}
