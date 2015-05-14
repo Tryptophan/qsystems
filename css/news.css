@@ -1,6 +1,6 @@
 .article {
 	padding: 20px;
-	border-radius: 5px;
+	border-radius: 4px;
 	background-color: #6EA6C0;
 	border-bottom: 8px solid #336183;
 	margin-bottom: 20px;
@@ -39,7 +39,7 @@
 }
 
 .read-more {
-	border-radius: 5px;
+	border-radius: 4px;
 	padding: 5px;
 	background-color: #7BC342;
 	width: 120px;
