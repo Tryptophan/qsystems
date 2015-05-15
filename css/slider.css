@@ -32,7 +32,7 @@
 #previous {
 	float: left;
 	position: absolute;
-	top: 450px;
+	top: 500px;
 	left: 80px;
 	z-index: 999;
 }
@@ -44,7 +44,7 @@
 #next {
 	float: right;
 	position: absolute;
-	top: 450px;
+	top: 500px;
 	right: 80px;
 	z-index: 999;
 }

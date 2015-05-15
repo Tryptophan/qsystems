@@ -1,5 +1,25 @@
-.tab-content input {
+.contact-form .text-field, .contact-form select {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
 	width: 100%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+	background-color: #336183;
+	border: none;
+	color: #FFF;
 	display: block;
 	margin: 20px 0px 20px 0px;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.submit-button {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 40px;
+	color: #FFF;
+	background-color: #7BC342;
+	border-radius: 4px;
+	border: none;
+	border-bottom: 3px solid #507F2B;
 }

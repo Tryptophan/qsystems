@@ -49,11 +49,11 @@
 	color: #FFF;
 }
 
-#tab-clicked {
+.tab-clicked {
 	background-color: #7BC342;
 }
 
-#tab-clicked p {
+.tab-clicked p {
 	color: #FFF;
 }
 
@@ -90,6 +90,5 @@
 .sub-header {
 	padding: 40px 80px 20px 80px;
 	height: 100px;
-	width: 100%;
 	background-color: #6EA6C0;
 }

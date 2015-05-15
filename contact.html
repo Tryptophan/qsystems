@@ -1,14 +1,13 @@
 <!doctype html>
 <html>
 	<head>
-		<title>QSystems - News</title>
+		<title>QSystems - Contact Us</title>
 
 		<!-- Fonts Reference -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
 		<!-- CSS References -->
-		<link rel="stylesheet" type="text/css" href="css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/global.min.css" />
 
 		<!-- JQuery References -->
 		<script type="text/javascript"src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -33,35 +32,35 @@
 				<div class="tab"><a href="our-passion.html"><p>Our Passion</p></a></div>
 				<div class="tab"><a href="franchising.html"><p>Franchising</p></a></div>
 				<div class="tab"><a href="leasing.html"><p>Leasing</p></a></div>
-				<div class="tab" id="tab-clicked"><a href="contact.html"><p>Contact</p></a></div>
+				<div class="tab tab-clicked"><a href="contact.html"><p>Contact</p></a></div>
 			</div>
 
 			<div id="search"><p>Search</p></div>
 		</div>
 
-		<div class="image-header">
-			<img src="img/news-header.jpg" alt="" />
-			<h1>Contact Us</h1>
-		</div>
+		<div class="sub-header"><h1>Contact Us</h1></div>
 
-		<div class="tab-content">
-			<form class="contact-form">
-				<input type="text" name="name">
-				<input type="text" name="email">
+		<div class="content">
+			<div class="container">
+				<form class="contact-form">
+					<input class="text-field" type="text" placeholder="Name" name="name">
+					<input class="text-field" type="text" placeholder="Email" name="email">
 
-				<select name="subject">
-					<option value="">Subject</option>
-					<option value="">Planes</option>
-					<option value="">Simulators</option>
-				</select>
+					<select name="subject">
+						<option value="">Subject</option>
+						<option value="">Planes</option>
+						<option value="">Simulators</option>
+					</select>
 
-				<input type="text" name="message">
-			</form>
+					<textarea class="text-field" rows="4" type="textarea" placeholder="Message" name="message"></textarea>
+					<input class="submit-button" type="submit" value="Send">
+				</form>
+			</div>
 		</div>
 
 		<div class="footer">
-			<div id="center-footer">
-				<div id="left-footer">
+			<div class="center-footer">
+				<div class="left-footer">
 					<div class="footer-links">
 						<p>Lorem</p>
 						<a class="footer-link" href="#"><p>Ipsum</p></a>
@@ -87,7 +86,7 @@
 					</div>
 				</div>
 
-				<div id="right-footer">
+				<div class="right-footer">
 					<div class="footer-links">
 						<p>Lorem</p>
 						<a class="footer-link" href="#"><p>Ipsum</p></a>

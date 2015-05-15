@@ -5,16 +5,16 @@
 	padding-top: 40px;
 }
 
-#center-footer {
+.center-footer {
 	width: 938px;
 	margin: auto;
 }
 
-#left-footer {
+.left-footer {
 	float: left;
 }
 
-#right-footer {
+.right-footer {
 	float: right;
 }
 
@@ -23,11 +23,11 @@
 	margin-right: 20px;
 }
 
-#left-footer :last-child{
+.left-footer :last-child{
 	margin-right: 0px;
 }
 
-#right-footer :last-child{
+.right-footer :last-child{
 	margin-right: 0px;
 }
 
