@@ -13,8 +13,6 @@
 }
 
 #logo {
-	width: 90px;
-	height: 100px;
 	margin-bottom: 20px;
 	margin-right: 5px;
 	display: inline-block;
@@ -43,6 +41,7 @@
 .tab:hover {
 	cursor: pointer;
 	background-color: #7BC342;
+	border-bottom: 3px solid #507F2B;
 }
 
 .tab:hover p {
@@ -51,6 +50,7 @@
 
 .tab-clicked {
 	background-color: #7BC342;
+	border-bottom: 3px solid #507F2B;
 }
 
 .tab-clicked p {
@@ -77,9 +77,8 @@
 	position: absolute;
 	right: 34px;
 	top: 22px;
-	padding-left: 6px;
-	width: 31px;
-	height: 26.4px;
+	padding: 2.5px 10px 1px 10px;
+	width: 20px;
 	border: solid 1px #BBB;
 }
 
