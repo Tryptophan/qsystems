@@ -52,3 +52,15 @@
 #next:hover {
 	cursor: pointer;
 }
+
+@media (max-width: 1050px) {
+	.slider-button {
+		left: 2.5%;
+	}
+	#previous {
+		left: 2.5%;
+	}
+	#next {
+		right: 2.5%;
+	}
+}

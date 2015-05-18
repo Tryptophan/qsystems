@@ -6,7 +6,7 @@
 }
 
 .center-footer {
-	width: 938px;
+	width: 1000px;
 	margin: auto;
 }
 
@@ -39,4 +39,10 @@
 	color: #282828;
 	font-size: 20px;
 	margin-bottom: 5px;
+}
+
+@media (max-width: 1050px) {
+	.center-footer {
+		width: 95%;
+	}
 }
