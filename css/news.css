@@ -53,3 +53,34 @@
 .read-more p {
 	font-size: 25px;
 }
+
+.news-pagination {
+	width: 100%;
+	text-align: center;
+}
+
+.news-pagination ul {
+	display: inline-block;
+}
+
+.news-pagination ul li {
+	border-radius: 4px;
+	padding: 5px 10px 5px 10px;
+	background-color: #7BC342;
+	border-bottom: 3px solid #507F2B;
+	margin-right: 5px;
+	display: inline-block;
+	color: #FFF;
+}
+
+.news-pagination ul li:last-child {
+	margin-right: 0px;
+}
+
+.news-pagination ul .active {
+	background-color: #507F2B;
+}
+
+.news-pagination ul li a:visited {
+	color: #FFF;
+}

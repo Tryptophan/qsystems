@@ -43,7 +43,7 @@
 
 		<div class="content">
 			<div class="article">
-			<h1>Article</h1><p class="date">August 5th, 2015</p>
+				<h1>Article</h1><p class="date">August 5th, 2015</p>
 				<article>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
@@ -55,7 +55,7 @@
 			</div>
 
 			<div class="article">
-			<h1>Article</h1><p class="date">August 5th, 2015</p>
+				<h1>Article</h1><p class="date">August 5th, 2015</p>
 				<article>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
@@ -63,7 +63,7 @@
 			</div>
 
 			<div class="article">
-			<h1>Article</h1><p class="date">August 5th, 2015</p>
+				<h1>Article</h1><p class="date">August 5th, 2015</p>
 				<article>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
@@ -71,12 +71,30 @@
 			</div>
 
 			<div class="article">
-			<h1>Article</h1><p class="date">August 5th, 2015</p>
+				<h1>Article</h1><p class="date">August 5th, 2015</p>
 				<article>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
 				</article>
 			</div>
+
+			<div class="article">
+				<h1>Article</h1><p class="date">August 5th, 2015</p>
+				<article>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</article>
+			</div>
+
+			<div class="article">
+				<h1>Article</h1><p class="date">August 5th, 2015</p>
+				<article>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</article>
+			</div>
+
+			<div class="news-pagination"></div>
 		</div>
 
 		<div class="footer">
@@ -127,12 +145,34 @@
 			</div>
 		</div>
 		<script type="text/javascript" src="js/readmore.min.js"></script>
+		<script type="text/javascript" src="js/jquery.simplePagination.min.js"></script>
+
 		<script type="text/javascript">
 			$('article').readmore({
 				moreLink: '<div class="read-more"><p>Read more...</p></div>',
 				lessLink: '<div class="read-more"><p>Close</p></div>',
 				blockCSS: 'display: block; width: ; margin-top: 20px;',
 				speed: 500
+			});
+
+			var items = $('article').length;
+			var itemsPerPage = 4;
+
+			$('.article').hide();
+			$('.article').slice(0, itemsPerPage).show();
+
+			$(function() {
+				$('.news-pagination').pagination({
+					items: items,
+					itemsOnPage: itemsPerPage,
+					onPageClick: function(pageNumber) {
+						var showFrom = itemsPerPage * (pageNumber - 1);
+						var showTo = showFrom + itemsPerPage;
+
+						$('.article').hide();
+						$('.article').slice(showFrom, showTo).show();
+        			}
+				});
 			});
 		</script>
 	</body>
