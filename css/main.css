@@ -32,6 +32,7 @@ p {
 	background-repeat: no-repeat;
 	background-size: 40%;
 	background-position: center;
+	float: left;
 }
 
 .tri-container > :nth-child(2) {
@@ -46,18 +47,11 @@ p {
 	background-repeat: no-repeat;
 	background-size: 80%;
 	background-position: center;
-}
-
-.tri-container :nth-child(2) {
-
-}
-
-.tri-container :nth-child(3) {
-	margin-right: 0%;
+	float: right;
 }
 
 .tri-container {
-	margin: 0 auto;
+	text-align: center;
 	margin-bottom: 20px;
 }
 
@@ -65,28 +59,28 @@ p {
 	width: 30%;
 	height: 300px;
 	border-radius: 4px;
-	margin-right: 4.5%;
 	background-color: #336183;
 	display: inline-block;
-	position: relative;
 }
 
 .button {
 	width: 80%;
-	border-radius: 5px;
-	background-color: #7BC342;
-	position: absolute;
-	margin: 0 auto;
-	left: 0;
-	right: 0;
-	bottom: 20px;
 	padding: 5px;
+	border-radius: 4px;
+	background-color: #7BC342;
 	border-bottom: 3px solid #507F2B;
+	display: inline-block;
+	margin: 235px auto;
 }
 
 .button p {
 	font-size: 30px;
 	text-align: center;
+}
+
+.third-container a:visited {
+	color: #FFF;
+	text-decoration: none;
 }
 
 .container {
@@ -113,6 +107,9 @@ p {
 	}
 	p {
 		font-size: 24px;
+	}
+	.button {
+		margin: 200px auto;
 	}
 	.button p {
 		font-size: 24px;
