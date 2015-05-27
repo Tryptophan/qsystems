@@ -14,6 +14,15 @@
 	z-index: -1;
 }
 
+.bx-pager-item {
+	display: none;
+}
+
+.bxslider li img {
+	height: auto;
+	width: 100%;
+}
+
 .slider-button {
 	background-color: #6EA6C0;
 	position: absolute;
@@ -62,5 +71,29 @@
 	}
 	#next {
 		right: 2.5%;
+	}
+}
+
+@media (max-width: 900px) {
+	.slider {
+		height: auto;
+	}
+	.slides {
+		height: auto;
+	}
+}
+
+@media (max-width: 800px) {
+	#previous {
+		display: none;
+	}
+	#next {
+		display: none;
+	}
+	.slider-button {
+		bottom: 20px;
+	}
+	.slider-button p {
+		font-size: 16px;
 	}
 }

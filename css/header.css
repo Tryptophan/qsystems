@@ -92,6 +92,17 @@
 	background-color: #6EA6C0;
 }
 
+.menu-toggle img {
+	width: 32px;
+	position: absolute;
+	top: 20px;
+	right: 2.5%;
+}
+
+.menu-toggle {
+	display: none;
+}
+
 @media (max-width: 1050px) {
 	.header {
 		height: 200px;
@@ -99,5 +110,26 @@
 	}
 	#logo-container img {
 		width: 65px;
+	}
+}
+
+@media (max-width: 800px) {
+	#logo-container img {
+		width: 35px;
+	}
+	.search {
+		display: none;
+	}
+	.search-button {
+		display: none;
+	}
+	.menu-toggle {
+		display: block;
+	}
+	.tab {
+		display: none;
+	}
+	.header {
+		height: 55px;
 	}
 }

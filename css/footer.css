@@ -46,3 +46,12 @@
 		width: 95%;
 	}
 }
+
+@media (max-width: 800px) {
+	.footer-links p {
+		font-size: 20px;
+	}
+	.footer-link p {
+		font-size: 14px;
+	}
+}

@@ -118,3 +118,26 @@ p {
 		height: 250px;
 	}
 }
+
+@media (max-width: 800px) {
+	h1 {
+		font-size: 32px;
+	}
+	p {
+		font-size: 22px;
+	}
+	.content {
+		padding: 40px 0px 40px 0px;
+	}
+	.button {
+		margin: 10px 0px 10px 0px;
+	}
+	.button p {
+		font-size: 16px;
+	}
+	.third-container {
+		width: 33%;
+		height: auto;
+		background-image: none !important;
+	}
+}
