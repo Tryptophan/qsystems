@@ -20,6 +20,7 @@
 
 .tab-container {
 	margin: 10px 0px 10px 0px;
+	z-index: 999;
 }
 
 .tab {
@@ -108,12 +109,18 @@
 		height: 200px;
 		padding: 20px 2.5% 0px 2.5%;
 	}
+	.sub-header {
+		padding: 20px 2.5% 0px 2.5%;
+	}
 	#logo-container img {
 		width: 65px;
 	}
 }
 
 @media (max-width: 800px) {
+	#logo-container {
+		height: 55px;
+	}
 	#logo-container img {
 		width: 35px;
 	}
@@ -126,8 +133,29 @@
 	.menu-toggle {
 		display: block;
 	}
-	.tab {
+	.tab-container {
+		width: 100%;
+		margin: 0;
+		background-color: #FFF;
+		position: absolute;
+		left: 0;
 		display: none;
+	}
+	.tab {
+		margin: 0px;
+		display: block;
+	}
+	.tab:hover {
+		border-radius: 0px;
+		border: none;
+	}
+	.tab-clicked {
+		border-radius: 0px;
+		border: none;
+	}
+	.tab p {
+		font-size: 20px;
+		text-align: center;
 	}
 	.header {
 		height: 55px;

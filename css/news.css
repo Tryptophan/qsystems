@@ -19,22 +19,9 @@
 	margin-bottom: 10px;
 }
 
-.hidden p:nth-child(1) {
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-}
-
-.hidden p:nth-child(n+2) {
-	display: none;
-}
-
-.hidden div, .hidden img, .hidden iframe, .hidden h1, .hidden h2, .hidden h3 {
-	display: none;
-}
-
 .article-video {
-	width: 560px;
+	text-align: center;
+	width: 80%;
 	margin: 20px auto 20px auto;
 }
 
@@ -83,4 +70,13 @@
 
 .news-pagination ul li a:visited {
 	color: #FFF;
+}
+
+@media (max-width: 800px) {
+	.article-video {
+		width: 100%;
+	}
+	.article-video iframe {
+		width: 100%;
+	}
 }
